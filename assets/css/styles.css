@@ -11,17 +11,46 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
+:root {
+    --bg-primary: #fffaf5;
+}
+
 /* =========================common======================== */
 
 a {
     text-decoration: none;
 }
 
+.heading__top {
+    color: #5e6085;
+    font-family: Sora;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+}
+
+.heading {
+    color: #000958;
+    font-family: Sora;
+    font-size: 5.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 119.231%;
+}
+
+.desc {
+    color: #656689;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 187.5%;
+}
+
 /* =========================header======================== */
 
 .header {
     height: 100vh;
-    background: #fffaf5;
+    background: var(--bg-primary);
 }
 
 .nav {
@@ -78,9 +107,10 @@ a {
 }
 
 .header__container {
-    margin: 35px 117px 0 77px;
+    margin: 68px 117px 0 77px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .header__left {
@@ -108,8 +138,8 @@ a {
     left: 423px;
     width: 186px;
     height: 244px;
-    border: 2px solid #ffcccf;
-    background: #faa7ad;
+    border: 2px solid #fffefe;
+    background: #f4d1d3;
 }
 
 .header__frame:last-of-type .header__img {
@@ -163,6 +193,13 @@ a {
     box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.42);
 }
 
+.book-box:hover {
+    opacity: 0.9;
+    .circle {
+        transform: translateX(7px);
+    }
+}
+
 .circle {
     display: flex;
     margin-left: 10px;
@@ -170,6 +207,7 @@ a {
     height: 20px;
     border-radius: 50%;
     background-color: #fff;
+    transition: all 0.3s ease;
 }
 
 .caretRight {
@@ -193,6 +231,7 @@ a {
     padding: 18px 14px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     z-index: 99;
     position: absolute;
     bottom: 0;
@@ -206,8 +245,7 @@ a {
 
 .header__card__item {
     display: flex;
-    flex: 1;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .card__line {
@@ -241,4 +279,128 @@ a {
     height: 2px;
     border-radius: 99px;
     background: #f2f2f2;
+}
+
+/* =========================about======================== */
+
+.about {
+    padding: 130px 135px 53px;
+    background: var(--bg-primary);
+    height: 665px;
+}
+
+.about__container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about__left {
+    width: 40.7%;
+    align-self: center;
+    padding-bottom: 80px;
+}
+
+.about__heading {
+    margin: 15px 0 24px;
+}
+
+.about__proof {
+    margin-top: 54px;
+    display: grid;
+    grid-template: auto auto / 1fr 1fr;
+    row-gap: 34px;
+}
+
+.proof__item {
+    display: flex;
+    align-items: center;
+}
+
+.proof__content {
+    margin-left: 10px;
+    color: #48496a;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 100%;
+}
+
+.about__right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 44.2%;
+}
+
+.about__imgBox {
+    position: absolute;
+    left: 96px;
+    width: 494px;
+}
+
+.about__imgBox__bottom {
+    display: flex;
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 336px;
+    border-radius: 16px;
+    background: linear-gradient(180deg, #fce0ef 0%, #fac3d1 100%);
+}
+
+.about__img {
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+}
+
+.about__decor {
+    z-index: 0;
+    position: absolute;
+    bottom: 307px;
+    right: -50.36px;
+}
+
+.about__yearBox {
+    padding: 31px 26px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 238px;
+    left: 0;
+    z-index: 99;
+    width: 136px;
+    height: 156px;
+    border-radius: 10px;
+    background: #5bd6e2;
+    box-shadow: -15px 26px 48px 0px rgba(85, 240, 255, 0.17);
+}
+
+.numberYears {
+    color: #fff;
+    font-family: Sora;
+    font-size: 4.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+}
+
+.about__yearBox__desc {
+    margin-top: 14px;
+    color: #c6f4f9;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 142.857%;
+}
+
+.catToe {
+    position: absolute;
+    top: -39px;
+    left: 86px;
 }
