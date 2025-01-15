@@ -1,0 +1,244 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+/* =========================common======================== */
+
+a {
+    text-decoration: none;
+}
+
+/* =========================header======================== */
+
+.header {
+    height: 100vh;
+    background: #fffaf5;
+}
+
+.nav {
+    padding-top: 26px;
+    margin: 0 135px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__list {
+    display: flex;
+    gap: 0 36px;
+}
+
+.logo-box {
+    display: flex;
+    align-items: center;
+    color: #000958;
+    font-family: Sora;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 100% */
+}
+
+.logo {
+    margin-right: 8px;
+}
+
+.nav__item,
+.nav__btn {
+    color: #5e6085;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 100%;
+}
+
+.nav__item:hover {
+    color: #000958;
+    font-weight: 600;
+}
+
+.nav__btn {
+    padding: 18px 31px;
+    font-weight: 600;
+    border-radius: 99px;
+    border: 1px solid #000958;
+}
+
+.nav__btn:hover {
+    background: #000958;
+    color: #fffaf5;
+}
+
+.header__container {
+    margin: 35px 117px 0 77px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__left {
+    position: relative;
+    width: 609px;
+    height: 582px;
+}
+
+.header__frame {
+    box-sizing: content-box;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 56px;
+    width: 388px;
+    height: 488px;
+    border-radius: 16px;
+    border: 3px solid #fff;
+    background: #fe997b;
+}
+
+.header__frame:last-of-type {
+    position: absolute;
+    top: 302px;
+    left: 423px;
+    width: 186px;
+    height: 244px;
+    border: 2px solid #ffcccf;
+    background: #faa7ad;
+}
+
+.header__frame:last-of-type .header__img {
+    position: absolute;
+    bottom: 0;
+}
+
+.header__decor {
+    position: absolute;
+    top: 17px;
+    right: 122px;
+}
+
+.header__decor:last-of-type {
+    left: 0;
+    top: 247px;
+}
+
+.header__right {
+    width: 36%;
+}
+
+.header__heading {
+    color: #000958;
+    font-family: Sora;
+    font-size: 6.6rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 115.152%;
+}
+
+.header__desc {
+    margin-top: 24px;
+    color: #656689;
+    font-weight: 400;
+    line-height: 187.5%;
+}
+
+.header__book {
+    margin-top: 38px;
+    display: flex;
+    align-items: center;
+}
+
+.book-box {
+    padding: 22px 30px;
+    display: flex;
+    align-items: center;
+    background: #ff5b2e;
+    border-radius: 99px;
+    box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.42);
+}
+
+.circle {
+    display: flex;
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.caretRight {
+    margin: auto;
+}
+
+.book__btn {
+    color: #fff;
+    line-height: 100%;
+    font-weight: 600;
+}
+
+.book__schedule {
+    margin-left: 24px;
+    color: #000958;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.header__card {
+    padding: 18px 14px;
+    display: flex;
+    flex-direction: column;
+    z-index: 99;
+    position: absolute;
+    bottom: 0;
+    right: 171px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: -17px 14px 68px -4px rgba(207, 174, 132, 0.25);
+    width: 250px;
+    height: 156px;
+}
+
+.header__card__item {
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+
+.card__line {
+    margin-top: 6px;
+    width: 118px;
+    height: 4px;
+    border-radius: 99px;
+    opacity: 0.08;
+    background: #000958;
+}
+
+.card__line:last-child {
+    width: 39px;
+}
+
+.card__item__box {
+    margin-right: 10px;
+    overflow: hidden;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: #fec23f;
+}
+
+.header__card__item:last-child .card__item__box {
+    background: #6fa5d5;
+}
+
+.card__separate {
+    width: 222px;
+    height: 2px;
+    border-radius: 99px;
+    background: #f2f2f2;
+}
